@@ -8,11 +8,13 @@
     "vscode": "^1.77.0"
   },
   "categories": [
-    "CSS",
-    "Development Tools",
-    "Web Development",
-    "Utilities"
+    "Other",
+    "Formatters"
   ],
+  "activationEvents": [
+    "onCommand:colorvariableextractor.extractColorsToVariables"
+  ],
+  "main": "./extension.js",
   "contributes": {
     "commands": [
       {
@@ -36,11 +38,7 @@
           "name": "Color Variable Extractor"
         }
       ]
-    },
-    "activationEvents": [
-      "onCommand:colorvariableextractor.extractColorsToVariables"
-    ],
-    "main": "./extension.js"
+    }
   },
   "scripts": {
     "lint": "eslint .",
