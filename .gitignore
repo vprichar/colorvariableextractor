@@ -12,6 +12,10 @@ Desktop.ini
 .directory
 *~
 
-
+# NPM
+node_modules
+package-lock.json
+*.log
+*.gz
 
 # Build
