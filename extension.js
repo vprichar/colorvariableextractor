@@ -1,5 +1,4 @@
 const vscode = require('vscode');
-
 function activate(context) {
   vscode.window.showInformationMessage('The ColorVariableExtractor extension is active.');
 
@@ -19,18 +18,21 @@ function activate(context) {
     let match;
     let colorCounter = 1;
 
+
     while ((match = hexColorRegex.exec(text)) !== null) {
       const color = match[0];
 
       if (!colorVariableMap.has(color)) {
-        colorVariableMap.set(color, `--color-${colorCounter}`);
+        const filename = document.fileName.replace(/^.*[\\\/]/, '').split('.').slice(0, -1).join('.');
+        colorVariableMap.set(color, `--color-${filename}-${colorCounter}`);
         colorCounter++;
       }
     }
     while ((match = namedColorRegex.exec(text)) !== null) {
       const color = match[0].toLowerCase();
       if (!colorVariableMap.has(color)) {
-        colorVariableMap.set(color, `--color-${colorCounter}`);
+        const filename = document.fileName.replace(/^.*[\\\/]/, '').split('.').slice(0, -1).join('.');
+        colorVariableMap.set(color, `--color-${filename}-${colorCounter}`);
         colorCounter++;
       }
     }
@@ -82,6 +84,4 @@ function activate(context) {
 
   context.subscriptions.push(disposable);
 }
-
-
 exports.activate = activate;

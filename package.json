@@ -2,7 +2,8 @@
   "name": "colorvariableextractor",
   "displayName": "ColorVariableExtractor",
   "description": "Automatically extracts hex colors from CSS files and converts them into CSS variables for easy customization and maintainability.",
-  "version": "0.0.2",
+  "version": "0.0.4",
+  "icon": "lofoestencniso.png",
   "publisher": "colorvariableextractor",
   "engines": {
     "vscode": "^1.77.0"
