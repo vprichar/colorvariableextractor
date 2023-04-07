@@ -1,65 +1,38 @@
-# colorvariableextractor README
+# ColorVariableExtractor README 🎨🎉
 
-This is the README for your extension "colorvariableextractor". After writing up a brief description, we recommend including the following sections.
+ColorVariableExtractor is an extension for Visual Studio Code that automatically extracts hex colors from CSS files and converts them into CSS variables for easy customization and maintainability.
 
-## Features
+## Features 🌟
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+🎨 Automatically extract hex colors from CSS files
+🎨 Convert hex colors to CSS variables
+🎨 Replace hex colors in your CSS with their corresponding variable names
+🎨 Output a block of CSS variables at the top of your CSS file
+🎨 Easy to customize and maintain your color scheme
 
-For example if there is an image subfolder under your extension project workspace:
+## Usage 💻
 
-\!\[feature X\]\(images/feature-x.png\)
+1. Open a CSS file in Visual Studio Code
+2. Press `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (Mac) to open the Command Palette
+3. Type `Extract Colors to Variables` and select the command from the list
+4. Your CSS file will be updated with CSS variables and the variable declarations will be output at the top of the file
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Requirements 🛠️
 
-## Requirements
+There are no additional requirements or dependencies for this extension.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+## Known Issues 🚨
 
-## Extension Settings
+There are currently no known issues with this extension. If you encounter any issues, please report them on the [GitHub repository](https://github.com/vprichar/colorvariableextractor/issues).
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+## Credits 👏
 
-For example:
+This extension was created by [vprichar](https://github.com/vprichar) and is available on [GitHub](https://github.com/vprichar/colorvariableextractor).
 
-This extension contributes the following settings:
+## Release Notes 📝
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+### 0.0.1
 
-## Known Issues
+Initial release of ColorVariableExtractor
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+**Enjoy!** 🎉
